@@ -17,12 +17,5 @@ pipeline {
  }
  }
  }
- stage('Deploy to Tomcat') {
- steps {
- script {
-deploy contextPath: '/pipeline1', war: '**/*.war'
- }
- }
- }
 }
 }
